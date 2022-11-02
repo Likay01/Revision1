@@ -20,11 +20,15 @@ h1{
 p{
     background-color: rgb(255, 255, 0);
 }
+section{
+    display: flex;
+}
 img{
     background-color: red;
     height: 300px;
     width: 300px;
     border-radius: 50%;
+    margin:0 auto;
 }
 footer{
     text-align: center;
@@ -36,5 +40,40 @@ section{
     background-color: olive;
 }
 body{
-    font-family:  'Roboto', sans-serif;;
+    font-family:  'Roboto', sans-serif;
+    background-color: lime;
+}
+.form-div {
+    display: flex;
+    
+}
+form{
+    display:inline-flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    padding: 20px;
+    width:900px ;
+   margin: 10px auto;
+   background-color: rgb(12, 221, 12);
+
+}
+input{
+    border-radius: 10px;
+}
+textarea{
+    border-radius: 10px;
+    margin-bottom:10px;
+}
+.sub{
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}
+label{
+    text-align: center;
+}
+@media only screen and(max-width:720px) {
+    
 }
