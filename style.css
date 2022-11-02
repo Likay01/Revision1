@@ -22,6 +22,7 @@ p{
 }
 section{
     display: flex;
+    background-color: olive;
 }
 img{
     background-color: red;
@@ -35,9 +36,6 @@ footer{
     border-style: groove;
     border-radius: 10px;
     border-color: orange;
-}
-section{
-    background-color: olive;
 }
 body{
     font-family:  'Roboto', sans-serif;
@@ -74,6 +72,56 @@ textarea{
 label{
     text-align: center;
 }
-@media only screen and(max-width:720px) {
-    
+.grid-container{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+   gap: 10px;
+   box-shadow:0 0 5px ;
+   margin-bottom: 10px;
+   
 }
+.col{
+    grid-column-start:1 ;
+    grid-column-end: 2;
+    text-align: center;
+}
+.col2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+}
+.content{
+    background-color: lime;
+}
+.para{
+    background-color: lime;
+}
+.flex-container{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.prop{
+    text-align: center;
+    box-shadow:0 0 5px ;
+}
+@media only screen and (max-width: 720px) {
+    .col{
+        grid-column-start:1 ;
+        grid-column-end: 3;
+        text-align: center;
+    }
+    .col2{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+    }
+    .flex-container{
+        flex-direction: column;
+    }
+    img{
+        width: 90%;
+        height: 90%;
+    }
+}
+
